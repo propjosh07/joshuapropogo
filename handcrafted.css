@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --background-color: #EBECF0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background-color);
+}
+#header {
+    background-color: var(--background-color);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#header-img {
+    display: flex;
+    align-items: center;
+}
+#header-img img {
+    width: 22%;
+    margin-left: 2%;
+}
+#nav-bar {
+   position: absolute;
+   left: 55%;
+   top: 35%;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin: 45px;
+    padding: 12px;
+}
+#nav-bar a:hover {
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+}
+.handcrafted {
+    text-align: center;
+    padding-top: 7%;
+}
+.handcrafted h3 {
+    font-size: 25px;
+}
+.handcrafted #email {
+    width: 20%;
+    padding: 5px;
+    margin: 15px auto;
+}
+.handcrafted #email:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+button {
+    padding: 10px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    outline: none;
+}
+button:hover {
+    background-color: green;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content {
+    width: 60%;
+    margin-left: 20%;
+}
+.icon {
+    padding-top: 10%;
+    margin-bottom: -2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon .fab {
+    font-size: 4em;
+    margin-left: -85px;
+}
+.icon i {
+    font-size: 3em;
+    color: orange;
+}
+.icon .text {
+    margin-left: 10%;
+}
+.video {
+    text-align: center;
+    margin: 10%;
+}
+.cc {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+#box {
+    border: 1px solid black;
+    text-align: center;
+    width: 23%;
+    border-radius: 2px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px 2px rgb(131, 122, 122);
+}
+#box h6 {
+    background-color: #D3D3D3;
+    padding: 15px;
+    font-size: 15px;
+}
+#box #con h5 {
+    font-size: 25px;
+}
+#box #con p {
+    margin: 2px;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+#box #con {
+    padding: 20px;
+}
+.select {
+    margin: 15px;
+    background-color: rgb(255, 166, 0, 0.7);
+    width: 50%;
+    font-weight: normal;
+}
+.select:hover {
+    background-color: orange;
+}
+footer {
+    background-color: rgb(214, 206, 206);
+    padding: 15px;
+}
+.foot {
+    display: flex;
+}
+.foot h6 {
+    padding: 10px;
+    font-size: 15px;
+}
+.copyright p {
+    color: rgb(114, 110, 110);
+}

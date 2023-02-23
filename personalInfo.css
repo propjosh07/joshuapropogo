@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    background: linear-gradient(60deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0));
+}
+#welcome-section h1 {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    height: 100vh;
+}
+p {
+    color: rgb(233, 94, 94);
+    left: 36%;
+    font-size: 35px;
+    top: 380px;
+    position: absolute;
+}
+#welcome-section #projects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#welcome-section .project-title {
+   background-color: #ed2939;
+   padding: 25px;
+   padding-left: 69%;
+}
+#welcome-section .project-title a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+}
+#welcome-section .project-title a:hover {
+    background-color: rgb(68, 142, 240);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#content {
+    background-color: rgb(58, 58, 212);
+    padding-bottom: 5%;
+}
+#content h1 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 3px;
+    border-bottom-width: 2.1px;
+    width: fit-content;
+    border-bottom-style: solid;
+    margin: auto;
+    padding: 90px 15px 0 15px;
+}
+#profile-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5% 4%;
+    gap: 30px;
+}
+.content-img img {
+    height: 350px;
+    width: 390px;
+    border: 2px solid gray;
+    border-bottom: none;
+}
+.content-img a {
+    text-decoration: none;
+}
+.text {
+    border: 2px solid gray;
+    border-top: none;
+    margin-top: -4px;
+    background-color: #222222;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+.text::before {
+    content: "< ";
+    color: #222222;
+    margin-left: -15px;
+    transition: 0.3s ease-out;
+}
+.text::after {
+    content: " / >";
+    color: #222222;
+    transition: 0.3s ease-out;
+}
+.text:hover::before {
+    color: orange;
+}
+.text:hover::after {
+   color: orange;
+}
+.button {
+    color: white;
+    background-color: #222222;
+    padding: 12px 20px 10px;
+    font-size: 20px;
+    border: none;
+    margin-left: 45%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button::after {
+    content: "\f2f5";
+    font-size: 20px;
+    padding-left: 10px;
+    animation: out 0.80s;
+    position: relative;
+    font-family: FontAwesome;
+}
+.button:hover {
+    background-color: #ed2939;
+    transition: 1s;
+}
+.button:hover::after {
+    position: relative;
+    animation: in 0.80s;
+    animation-fill-mode: forwards;
+}
+@keyframes out {
+    from {
+        left: 3px;
+    }
+    to {
+        left: 0px;
+    }
+}
+@keyframes in {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 4px;
+    }
+}
+.see a {
+    text-decoration: none;
+}
+.second-content {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+.second-content h1 {
+    font-size: 60px;
+}
+.second-content .text-content {
+    font-size: 15px;
+    margin: 6px;
+}
+.icon {
+    margin: 30px 15px;
+    display: inline-block;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+.icon a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    animation: media 0.50s;
+    position: relative;
+}
+.icon a i {
+    margin: 5px;
+}
+.icon a:hover {
+    animation: social 0.50s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes social {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 8px;
+    }
+}
+@keyframes media {
+    from {
+        top: 8px;
+    }
+    to {
+        top: 0px;
+    }
+}
+footer {
+    border-top: 4px solid #ed2939;
+    padding: 35px;
+    text-align: center;
+    color: white;
+}

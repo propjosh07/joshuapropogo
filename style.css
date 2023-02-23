@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
+}
+::selection {
+    background-color: rgb(16, 150, 150);
+    color: white;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.9em;
+    color: white;
+}
+header .head h2{
+    position: relative;
+    left: -1em;
+    font-family: 'Lucida Calligraphy';
+    font-style: italic;
+    font-size: 30px;
+    line-height: 61px;
+    font-weight: 400;
+}
+.head .circle {
+    position: absolute;
+    background-color: rgba(97, 135, 110, 0.58);
+    border-radius: 50%;
+    width: 366px;
+    height: 358px;
+    left: -12em;
+    top: -12em;
+}
+.nav {
+   margin-left: 10em;
+}
+nav a{
+    margin-right: 3em;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    color: #3C6255;
+    transition: 0.2s ease-in-out;
+}
+.nav a:first-child {
+    color: #3C6255;
+}
+.btn {
+    background: #3C6255;
+    border-radius: 10px;
+    color: white;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+}
+.image {
+    position: absolute;
+    left: 25em;
+    top: -5em;
+    z-index: -1;
+}
+.text {
+    margin-left: 5em;
+    color: white;
+    line-height: 3.60em;
+    margin-top: 12em;
+}
+.joshua {
+    color: #3C6255;
+    position: absolute;
+    z-index: -5;
+    margin-left: 8px;
+}
+.joshua::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    background-color: #1E1E1E;
+    border-left: 2px solid #4070F4;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    animation: animate 5s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+.text h1 {
+    font-weight: 700;
+    font-size: 3.20em;
+}
+#dev {
+    font-weight: 100;
+}
+#time {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    margin: 8em 5em;
+}
+.contact-btn {
+    background: #3C6255;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.image img {
+    width: 55em;
+}
+.main {
+    color: white;
+    margin-top: 14.3em;
+    background-color: #3C6255;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    display: flex;
+}
+.main .main-img{
+    background-color: rgba(30, 30, 30, 0.74);
+    border-radius: 5px;
+    margin: 1em 2.50em 2em 5em;
+}
+.main .main-img .circle2 {
+    position: absolute;
+    width: 686px;
+    height: 357px;
+    left: 37%;
+    top: 384px;
+    border-radius: 50%;
+    background: rgba(97, 135, 110, 0.49);
+    z-index: -5;
+}
+.main .main-img img {
+    width: 25em;
+    height: 25em;
+}
+.main-text {
+    margin-top: 2em;
+}
+.main-text h2 {
+    font-size: 2.45em;
+    line-height: 1.12em;
+}
+.main-text h3 {
+    line-height: 1.60em;
+    font-size: 1.88em;
+}
+.main-text h3 span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3C6255;
+    border-left: 2px solid #4070F4;
+    animation: anime2 5s steps(12) infinite;
+}
+.main-text h3 span {
+    color: rgb(28, 189, 189);
+    position: absolute;
+    margin-left: 10px;
+}
+@keyframes anime2 {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+.main-p {
+    margin-right: 5em;
+    text-align: justify;
+}
+.main-p p{
+    padding-bottom: .50em;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.social-btn button{
+    background: #61876E;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    width: 15%;
+    margin-right: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.skills {
+    margin: 3em 5em 5em;
+}
+.skills h1, .h2 {
+    color: white;
+    text-align: center;
+    line-height: 35px;
+}
+.skills .h2 {
+    font-weight: 200;
+    padding-bottom: 1em;
+}
+.progress-skills {
+    color: white;
+    border-radius: 10px;
+}
+.progress-skills p {
+    padding: 20px 1.50em;
+    background: rgba(60, 98, 85, 0.33);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: -0.50em;
+}
+.progress {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    left: 500px;
+    top: -2.40em;
+    background: #D9D9D9;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#press {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    color: #345a4d;
+}
+.prog1 {
+    position: absolute;
+    background: #3C6255;
+    border-radius: 50px;
+    height: 100%;
+}
+.prog2 {
+    position: absolute;
+    background: #3C6255;
+    border-radius: 50px;
+    height: 100%;
+}
+.prog3 {
+    position: absolute;
+    background: #3C6255;
+    border-radius: 50px;
+    height: 100%;
+}
+.prog4 {
+    position: absolute;
+    background: #3C6255;
+    border-radius: 50px;
+    height: 100%;
+}
+.prog5 {
+    position: absolute;
+    background: #3C6255;
+    border-radius: 50px;
+    height: 100%;
+}
+.progress-skills .progress-text {
+    position: absolute;
+    right: 5.50em;
+    margin-top: -1.85em;
+    font-weight: bold;
+    font-size: 20px;
+}
+.projects {
+    margin: 3em 5em 5em;
+}
+.pro-img {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 3em;
+   grid-row-gap: 5em;
+   text-align: center;
+}
+.projects-img img {
+    width: 100%;
+    height: 100%;
+}
+.project-btn {
+    line-height: 3em;
+}
+.project-btn button {
+    background: #3C6255;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 40%;
+    cursor: pointer;
+}
+section .contact h1{
+    margin-top: 5em;
+}
+.icon img {
+    background-color: green;
+}
+.message {
+    display: flex;
+}
+.icon {
+    background: rgba(60, 98, 85, 0.26);
+    padding: 15px;
+    border-radius: 5px;
+    width: 30em;
+}
+.icon i {
+    color: #A6BB8D;
+    padding: 20px;
+    font-size: 22px;
+}
+.message {
+    margin: 1em 5em;
+}
+form {
+    margin-left: 4em;
+}
+form input {
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    width: 35em;
+}
+form input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+form .group-input {
+    margin-bottom: 0.50em;
+    outline: none;
+}
+textarea {
+    width: 35em;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+}
+textarea::placeholder {
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.input #submit {
+    width: 9em;
+    background: #3C6255;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    margin-top: 1em;
+    margin-left: -5em;
+    padding: 25px;
+    position: absolute;
+    background-color: rgba(97, 135, 110, 0.52);
+    display: flex;
+    align-items: center;
+}
+.footer h2 {
+    margin-left: 0.50em;
+    font-family: 'Lucida Calligraphy';
+    font-style: italic;
+}
+.footer-circle {
+    position: absolute;
+    width: 12%;
+    height: 6.50em;
+    left: -50px;
+    border-radius: 50%;
+    background: rgba(97, 135, 110, 0.58);
+    z-index: -5;
+}
+.footer-icon {
+    margin-left: 20%;
+}
+footer .footer-icon i {
+    font-size: 30px;
+    margin: 5px 8px;
+    color: white;
+}
+.reserved {
+    padding-left: 15em;
+}
+.reserved p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.reserved p span {
+    font-weight: bold;
+}
+
+
+
+
+

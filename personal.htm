@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta name="description" content="This is meta tags">
+    <meta name="keywords" content="This is keywords">
+    <meta name="author" content="This is author">
+    <meta http-equiv="refresh" content="30"> This is the meta tags of HTML-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Personal Portfolio</title>   
+    <style>
+        #scrollBtn {
+            right: 3em;
+            bottom: 3em;
+            position: fixed;
+            z-index: 1;
+            opacity: 0.50;
+            background-color: teal;
+            color: white;
+            border: 1px solid black;
+            padding: 12px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            
+        }
+        #scrollBtn:hover{
+            background-color: teal;
+            cursor: pointer;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head"> <!--Header-->
+            <div class="circle"></div>
+            <h2>Joshprops</h2>
+        </div>
+        <div class="nav" id="nav"> <!--Navagation-->
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+                <a href="Resume.jpg" download> <!--It can download here my resume-->
+                <button class="btn">Download Resume</button></a> <!--also here-->
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <button type="button" id="scrollBtn">Up</button>
+    </div>
+
+    <div>
+        <div class="text">
+            <div>
+        <p id="greeting"></p>
+    </div>
+    <div>
+        <h1>I am 
+            <span class="joshua">Joshua Propogo</span>
+        </h1>
+    </div>
+        <h1 id="dev">I am Web Developer</h1>
+        <div>
+            <button class="contact-btn">Contact</button>
+        </div>
+    </div>
+    <div class="image">
+        <div class="circle"></div>
+        <img src="Picture-removebg-preview (1).png">
+    </div>
+    </div>
+
+    <div id="time"></div>
+
+        <div class="main"> <!--section-->
+            <div class="main-img">
+                <div class="circle2"></div>
+                <img src="Picture-removebg-preview (1).png" alt="picture">
+            </div>
+            <div class="main-text">
+            <h2 id="about">About Me</h2>
+            <h3>Hi everyone! I am <span class="joshua2">Joshua Propogo</span></h3>
+            <div class="main-p">
+            <p>I’ve been practicing in coding for 3 years. I’ve been learning Hypertext Markup Language or HTML and Cascading Style Sheets or CSS for developing a website design. First language I’ve learned was HTML for the structure of the website. It was so hard for the first time but I wasn't gave up that time when I was practicing that language. Next I’ve learned was the CSS, of course without of this the website wouldn’t be attractive and creative styling design that have to be well looked at by the users.</p>
+            <p>These languages are one of my learnings for developing a website and now, I am practicing one of the language that have to be dynamic and interactive for the website and that is the JavaScript or JS. This language is too hard to understand but I have to focus on it to be sure that I will understand more about this language because this is the most important for having an interactive and dynamic in developing a website.</p>
+        </div>
+        <div class="social-btn">
+            <a href="https://web.facebook.com/joshua.propogo.71/" target="_blank">
+        <button>FACEBOOK</button></a>
+            <a href="https://www.instagram.com/joshprops07/" target="_blank">
+        <button>INSTAGRAM</button></a>
+            <a href="https://github.com/propjosh07" target="_blank">
+        <button>GITHUB</button></a>
+            <a href="https://www.linkedin.com/in/joshua-propogo-3a2567255/" target="_blank">
+        <button>LINKEDIN</button></a>
+    </div>
+        </div>
+        </div>
+
+        <div class="skills"> <!--sections-->
+            <h1 id="skills">SKILLS</h1>
+            <h2 class="h2">Web Technologies tool I’ve learned such as:</h2>
+            <div class="progress-skills">
+                <p>Hypertext Markup Language</p>
+                <span class="progress-text" id="progress-text">0</span>
+                <div class="progress">
+                    <div class="prog1" id="prog1"></div>
+                </div>
+            <div class="progress-skills">
+                <p>Cascading Style Sheets</p>
+                <span class="progress-text" id="progress-text2">0</span>
+                <div class="progress">
+                    <div class="prog2" id="prog2"></div>
+                </div>
+            <div class="progress-skills">
+                <p>JavaScript</p>
+                <span class="progress-text" id="progress-text3">0</span>
+                <div class="progress">
+                    <div class="prog3" id="prog3"></div>
+                </div>
+            <div class="progress-skills">
+                <p>XAMPP</p>
+                <span class="progress-text" id="progress-text4">0</span>
+                <div class="progress">
+                    <div class="prog4" id="prog4"></div>
+                </div>
+            <div class="progress-skills">
+                <p>PHP</p>
+                <span class="progress-text" id="progress-text5">0</span>
+                <div class="progress">
+                    <div class="prog5" id="prog5"></div>
+                </div>
+            </div>
+            <button id="press">Press the button...</button>
+        </div>
+
+        <div class="projects"> <!--main section-->
+            <h1 id="projects">PROJECTS</h1>
+            <h2 class="h2">I have several projects had done such as:</h2>
+            <div class="pro-img">
+            <div class="projects-img">
+                <img src="RESUME.png" alt="Resume">
+                <div class="project-btn">
+                    <a href="resume.html">
+                    <button title="RESUME">RESUME</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="landing page.png" alt="Landing Page">
+                <div class="project-btn">
+                    <a href="landing.html">
+                    <button title="LANDING PAGE">LANDING PAGE</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Dr. Norman Borlaug.png" alt="Dr. Norman Borlaug">
+                <div class="project-btn">
+                    <a href="dr.html">
+                    <button title="DR. NORMAN BORLAUG">DR. NORMAN BORLAUG</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Handcrafted, home-made masterpieces.png" alt="Handcrafted, home-made masterpieces">
+                <div class="project-btn">
+                    <a href="handcrafted.html">
+                    <button title="HANDCRAFTED, HOME-MADE 
+                    MASTERPIECES">HANDCRAFTED, HOME-MADE 
+                        MASTERPIECES</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Personal Portfolio.png" alt="Personal Portfolio2">
+                <div class="project-btn">
+                    <a href="personalInfo.html">
+                    <button title="PORTFOLIO WEBSITE">PORTFOLIO WEBSITE</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Survey form.png" alt="Survey form">
+                <div class="project-btn">
+                    <a href="survey.html">
+                    <button title="SURVEY FORM">SURVEY FORM</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Technical Documentation.png" alt="Technical Documentation">
+                <div class="project-btn">
+                    <a href="technical.htm">
+                    <button title="TECHNICAL DOCUMENTATION">TECHNICAL DOCUMENTATION</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Todo list.png" alt="Todo list">
+                <div class="project-btn">
+                    <a href="todoList.html">
+                    <button title="TODO LIST">TODO LIST</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Christmas Countdown.png" alt="Christmas Countdown">
+                <div class="project-btn">
+                    <a href="example.htm">
+                    <button title="COUNTDOWN">COUNTDOWN</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="Login.png" alt="Login">
+                <div class="project-btn">
+                    <a href="login.html">
+                    <button title="LOGIN PAGE">LOGIN PAGE</button></a>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img class="last" src="BU Landing Page.png" alt="BU Landing Page">
+                <div class="project-btn">
+                    <a href="landingPage2.html">
+                    <button title="LANDING PAGE 2">LANDING PAGE 2</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <section>
+            <div class="contact" id="contact">
+                <h1>CONTACT</h1>
+                <h2 class="h2">For more information you can directly contact me</h2>
+            </div>
+              <div class="message">
+                <div>
+                <div class="icon">
+                    <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Purok 6, Paulog, Ligao City, Albay, Philippines
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    joshuapropogo7@gmail.com
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    09155172416
+                </div>
+                </div>
+            </div>
+
+                <form action="">
+                <div class="input">
+                    <div class="group-input">
+                    <input type="text" name="name" placeholder="Name..." required id="inputText" oninput="change()">
+                </div>
+                    <div class="group-input">
+                    <input type="email" name="email" placeholder="Email..." required id="inputText2" oninput="change2()">
+                </div>
+                    <div class="group-input">
+                    <input type="text" name="subject" placeholder="Subject..." required id="inputText3" oninput="change3()">
+                </div>
+                    <div class="group-input">
+                    <textarea name="mess" id="mess" cols="30" rows="10" placeholder="Message..." required></textarea>
+                </div>
+                <input style="border: none;" type="submit" id="submit" value="Send">
+                </div>
+            </form>
+              </div>
+        </section>
+
+        <footer>
+            <div class="footer"> <!--footer-->
+                <h2>Joshprops</h2>
+                <div class="footer-circle"></div>
+                <div class="footer-icon">
+                    <a href="https://web.facebook.com/joshua.propogo.71/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#">
+                    <i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://github.com/propjosh07" target="_blank">
+                    <i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/joshprops07/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/joshua-propogo-3a2567255/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="reserved">
+                  <p><span>Joshua Propogo</span> All rights Reserved 2023</p> 
+                </div>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+</body>
+</html>

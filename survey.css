@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --color: rgb(255, 255, 255, 0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(rgba(22, 22, 230, 0.4), rgba(92, 92, 196, 0.4)), url(https://www.qualtrics.com/m/assets/au/wp-content/uploads/2018/03/what-is-a-survey-or-questionare.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+}
+#title {
+    text-align: center;
+    color: var(--color);
+    padding-top: 2%;
+}
+#title h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+#title p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#survey-form {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 55%;
+    margin: auto;
+    padding: 45px;
+}
+#survey-form input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+#survey-form #name {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#name #name-label {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 540;
+    margin-bottom: 15px;
+}
+#email {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#email #email-label {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 540;
+    margin-bottom: 15px;
+}
+#number {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#number-label {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 540;
+    margin-bottom: 15px;
+}
+#dropdown {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#dropdown #dropdown-label {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 549;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0, 0.70);
+}
+#dropdown #dropdown-label:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+#dropdown #dropdown-label :disabled {
+    background-color: rgb(129, 129, 129, 0.5);
+}
+#radio-label {
+    color: var(--color);
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#radio-label #radio {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: none;
+    top: 2px;
+    margin: 15px 12px -5px 0;
+}
+#option-label {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#option-label #option {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 549;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0, 0.70);
+}
+#option-label #option:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+#option-label #option :disabled {
+    background-color: rgb(129, 129, 129, 0.5);
+}
+#checkbox-label {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#checkbox-label #checkbox {
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    margin: 10px 12px 0 0;
+}
+#areas-label {
+    color: var(--color);
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+textarea {
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+}
+#submit {
+    margin-top: 20px;
+}
+button {
+    width: 100%;
+    background-color: #4C9A2A;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: green;
+}

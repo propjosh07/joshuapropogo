@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Kaushan+Script&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Antonio', sans-serif;
+    
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(116, 164, 197), rgba(0, 0, 0, 0.9));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header .fa {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav {
+    text-align: center;
+    flex: 1;
+    overflow: auto;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.nav a::after {
+    content: " ";
+    background-color: white;
+    width: 0;
+    display: block;
+    height: 2px;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav a:hover::after {
+    width: 80%;
+}
+.nav span {
+    font-size: 45px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+ .nav img {
+    position: absolute;
+    left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%); 
+   -webkit-box-reflect: below -75px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
+}
+h1 {
+    position: absolute;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    top: 50%;
+    bottom: 45%;
+    margin-left: 20%;
+    font-size: 80px;
+    font-family: lucida handwriting;
+}
+@media only screen and (max-width: 700px) {
+    .nav a {
+        display: none;
+    }
+    .nav span {
+        font-size: 50px;
+    }
+    h1 {
+        font-size: 350%;
+        right: 22%;
+    }
+    .nav img {
+        width: 100%;
+    }
+}
+.main {
+    text-align: center;
+    padding-top: 50px;
+    background: white;
+}
+.main-content h2 {
+    font-family: lucida handwriting;
+    padding-bottom: 25px;
+    color: rgb(0, 0, 0, 0.9);
+}
+.main-content p {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0, 0.7);
+}
+.bread{
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.bread-col {
+    flex-basis: 25%;
+    padding: 8px 12px;
+    margin-left: 15px;
+}
+.bread-col img {
+    display: block;
+    width: 80%;
+    border-radius: 50%;
+    height: 85%;
+    margin-left: 35px; 
+}
+.bread-col h3 {
+    padding-top: 30px;
+    
+}
+.bread-col p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 700px) {
+    .main-content p {
+        font-size: 12px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .bread-col img {
+        width: 300px;
+        height: 300px;
+        margin-left: 20%;
+    }
+    .bread-col h3 {
+        padding-top: 30px;
+    }
+    .bread-col p {
+        font-size: 12px;
+    }
+}
+.second-content {
+    height: 40rem;
+    margin-top: 10%;
+    background: rgba(116, 164, 197);
+}
+.bread-content {
+    padding-top: 60px;
+    position: relative;
+}
+.bread-content img {
+   filter: drop-shadow( 3px 30px 25px black);
+   width: 40%;
+}
+.bread-content h3 {
+    position: absolute;
+    color: white;
+    bottom: 75%;
+    font-size: 35px;
+    font-family: lucida handwriting;
+    margin-left: 10%;
+    text-align: center;
+
+}
+.bread-content p {
+    position: absolute;
+    color: white;
+    bottom: 65%;
+    margin-left: 5%;
+    text-align: center;
+}
+.btn {
+    position: absolute;
+    text-decoration: none;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    padding: 12px 18px;
+    margin-top: 200px;
+    left: 25%;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover {
+    background: black;
+    color: white;
+}
+.barline {
+    position: relative;
+    list-style: none;
+    color: white;
+    bottom: 20rem;
+    padding-left: 50%;
+    padding-top: -50%;
+    width: 600px;
+}
+.barline li {
+    margin: 30px 0;
+    padding-bottom: 5px;
+}
+.bar {
+    margin-top: 5px;
+    display: block;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar span {
+    height: 10px;
+    float: left;
+    background: white;
+}
+.Marketing {
+    width: 60%;
+    animation: Marketing 2s;
+    animation-iteration-count: infinite;
+}
+.Photography {
+    width: 52%;
+    animation: Photography 2s;
+    animation-iteration-count: infinite;
+}
+.Marketing2 {
+    width: 74%;
+    animation: Marketing2 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes Marketing {
+    0%{
+        width: 0
+    }
+    100%{
+        width: 60%
+    }
+}
+@keyframes Photography {
+    0%{
+        width: 0
+    }
+    100%{
+        width: 52%
+    }
+}
+@keyframes Marketing2 {
+    0%{
+        width: 0
+    }
+    100%{
+        width: 74%
+    }
+}
+@media only screen and (max-width: 700px) {
+    .second-content {
+        padding-top: -30px;
+    }
+    .bread-content img {
+        width: 70%;
+        padding-left: 25%;
+    }
+    .bread-content h3 {
+        font-size: 25px;
+        top: 30px;
+    }
+    .bread-content p {
+        top: 120px;
+    }
+    .btn {
+        margin-left: 20%;
+        margin-top: 50%;
+        position: absolute;
+        z-index: 5;
+    }
+    .barline {
+        padding-top: 50%;
+        padding-left: 10%;
+        width: 450px;
+    }
+}
+.taste {
+    text-align: center;
+    margin-top: 0;
+    padding: 5%; 
+    
+}
+.taste h2 {
+    font-family: lucida handwriting;
+    color: rgb(0, 0, 0, 0.9);
+    padding-bottom: 25px;
+}
+.taste p {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.7);
+}
+.taste-col {
+   margin: 10px 20px;
+}
+.taste-col img {
+    width: 160px;
+    height: 50%;
+    filter: drop-shadow(5px 9px 10px rgb(0, 0, 0, 0.7));
+}
+.taste-col h4 {
+    padding-top: 10px;
+    color: rgb(0, 0, 0, 0.7);
+}
+.taste-col p {
+    font-size: 12px;
+    color: rgb(0, 0, 0, 0.7);
+    padding-top: 5px;
+}
+@media only screen and (max-width: 700px) {
+    .taste-col img {
+        width: 50%;
+    }
+    .taste p {
+        font-size: 12px;
+    }
+}
+
+.footer {
+    background: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot1 {
+    margin-left: 50px;
+}
+.foot1 h2 {
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    transform: rotate(-6deg);
+    padding-top: -150px;
+    font-weight: 900;
+}
+.foot1 p {
+    padding-top: 35px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+.foot1 .text {
+    padding-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.fa {
+    padding: 10px;
+    color: gold;
+}
+.foot2 h4 {
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 80px;
+    font-size: 20px;
+    text-shadow: 5px 10px 15px black;
+}
+.foot3 {
+    position: relative;
+    margin-right: 100px;
+}
+.foot3 h2 {
+    padding-top: 80px;
+}
+.foot3 input {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+.foot3 .btn3 {
+   background-color: goldenrod;
+   width: 50px;
+}
+.foot3 h2 {
+    color: white;
+    text-shadow: 5px 10px 15px black;
+}
+.foot3 p {
+    color: white;
+    padding-top: 30px;
+}
+.foot3 span {
+    color: goldenrod;
+}
+@media only screen and (max-width: 700px) {
+    .footer {
+        padding: 5px;
+    }
+    .foot1 h2 {
+        padding-top: 20px;
+    }
+    .foot1 p {
+        font-size: 15px;
+    }
+    .foot1 .text {
+        font-size: 15px;
+    }
+    .foot1 .fa {
+        font-size: 10px;
+    }
+    .foot2 .john {
+        margin-left: 10px;
+    }
+    .foot2 {
+        margin-left: 120px;
+        font-size: 15px;
+    }
+    .foot3 {
+        padding-left: 50px;
+    }
+}
+.last {
+    background-color: black;
+    padding: 12px 15px;
+    text-align: center;
+}
+.last h5 {
+    color: white;
+    padding-top: 10px;
+}
+.fa-heart {
+    color: goldenrod;
+}

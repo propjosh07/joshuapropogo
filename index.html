@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .head {
+            border: 1px solid rgb(146, 141, 141);
+            padding: 20px;
+            width: 40%;
+            margin: 10% 29%;
+        }
+        .head h1 {
+            text-align: center;
+            padding: 12px;
+        }
+        .group-form {
+            margin: 15px 0 10px 0;
+        }
+        .group-form label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            outline: none;
+        }
+        button {
+            padding: 12px;
+            background-color: teal;
+            color: white;
+            border: none;
+            width: 40%;
+            margin: 10px 28%;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        p {
+            color:  red;
+            font-size: 15px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Personal Portfolio</h1>
+        <form action="">
+        <div class="group-form">
+            <label>Username</label>
+            <div>
+            <input type="text" name="text" id="user" placeholder="Username">
+        </div>
+        </div>
+        <div class="group-form">
+            <label>Password</label>
+            <div>
+            <input type="password" name="password" id="pass" placeholder="Password">
+        </div>
+        <div>
+            <p id="answer">Please input your credentials!</p>
+        </div>
+        </div>
+        <div>
+            <button type="button" id="btn-form">Submit</button>
+        </div>
+    </form>
+    </div>
+    </div>
+
+    <script>
+    let pressButton = document.getElementById('btn-form');
+    pressButton.onclick = () => {
+    let username = document.getElementById('user').value;
+    //console.log(username)
+    let password = document.getElementById('pass').value;
+
+    if(username != '' && password != '') {
+        setTimeout(getPortfolio, 2000);
+    }
+    else if (username === '' && password === '') {
+        document.getElementById('user').style.border = '1px solid red'
+        document.getElementById('pass').style.border = '1px solid red'
+    }
+    if (username != '' && password != '') {
+        document.getElementById('user').style.border = '1px solid green'
+        document.getElementById('pass').style.border = '1px solid green'
+        let err =  document.getElementById('answer');
+        err.style.display = 'none'
+    }
+    else {
+       let err =  document.getElementById('answer');
+       err.style.display = 'block'
+    }
+}
+
+function getPortfolio() {
+    return location.href = "personal.htm"
+}
+
+
+const username = document.getElementById('user');
+let password = document.getElementById('pass');
+let err =  document.getElementById('answer');
+window.addEventListener('keypress', pressIt)
+
+function pressIt(e) {
+
+    switch(e.key) {
+        case 'Enter':
+            let user = username.value;
+            let pass = password.value;
+            if(user === '' || pass === ''){
+                //console.log('empty');
+                document.getElementById('user').style.border = '1px solid red'
+                document.getElementById('pass').style.border = '1px solid red'
+                err.style.display = 'block'
+            }else {
+                //console.log('not empty')
+                setTimeout(getPortfolio, 2000);
+                document.getElementById('user').style.border = '1px solid green'
+                document.getElementById('pass').style.border = '1px solid green'
+                err.style.display = 'none'
+            }
+    }
+}
+    </script>
+</body>
+</html>
